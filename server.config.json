@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "bot.server",
+      "script": "src/index.js",      
+      "autorestart": true,
+      "watch": false,
+      "time": true,
+      "exec_mode": "cluster",
+      "instances": 1,
+      "max_memory_restart": "400M",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
